@@ -24,6 +24,7 @@
     font-weight: 400;
     margin: 0 auto;
     max-width: 235px;
+    line-height: 15px;
 }
 .unsignedin__btn{
     border-radius: 8px;

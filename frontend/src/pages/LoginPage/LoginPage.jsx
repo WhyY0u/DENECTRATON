@@ -8,9 +8,10 @@ import LoginForm from '../../components/Login/LoginForm/LoginForm'
 function LoginPage() {
   return (
     <div className={styles.login__page}>
-        <Background className={styles.login__background} src={logo_background} />
-        <Header />
-        <LoginForm />
+        <Background className={styles.login__background} src={logo_background}>
+          <Header />
+          <LoginForm />
+        </Background>
     </div>
   ) 
 }

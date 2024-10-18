@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import styles from './styles/LoginForm.module.css'
 import Input from '../../InputGlobal/Input'
 import EyeIcon from '../../EyeIcon/EyeIcon';
+import SignupButtonGlobal from '../../SignupButtonGlobal/SignupButtonGlobal';
+import UnsignedinGlobal from '../../UnsignedinGlobal/UnsignedinGlobal';
 
 function LoginForm() {
     const [isPasswordVisible, setIsPasswordVisible] = useState(false)
@@ -78,6 +80,19 @@ function LoginForm() {
                 </div>
             </div>
             
+            <SignupButtonGlobal 
+              className={!isFormDataEmpty(formData?.login) && !isFormDataEmpty(formData?.password) 
+              ? styles.login__form__button
+              : ''
+              } 
+              title={'Sign In'}
+            />
+
+            <UnsignedinGlobal
+              title={'First time here?'}
+              subtitle={'Sign up to Dissmilate and find job, projects and talents in one place.'}
+              btntitle={'Sign Up'}
+            />
         </div>
     </div>
   )
