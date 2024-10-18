@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles/Background.module.css';
 
-function Background({ src, alt, className }) {
+function Background({ src, alt, className,children }) {
   return (
     <div 
         className={`${className} ${styles.background__wrapper}`}
@@ -10,7 +10,11 @@ function Background({ src, alt, className }) {
     >
         <div
             className={styles.background}
-        />
+        >
+         <div className={styles.content}> {/* Оборачиваем детей в отдельный div */}
+              {children}
+          </div>
+          </div>
     </div>
   );
 }

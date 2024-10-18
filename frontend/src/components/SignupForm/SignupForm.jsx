@@ -1,0 +1,159 @@
+import React, { useState } from 'react'
+import styles from './styles/SignupForm.module.css'
+import Input from '../InputGlobal/Input'
+import EyeIcon from '../EyeIcon/EyeIcon';
+import InputLittleGlobal from '../InputLittleGlobal/InputLittleGlobal';
+
+function SignupForm() {
+    const [isPasswordVisible, setIsPasswordVisible] = useState(false)
+    const [isClicked, setIsClicked] = useState(false)
+    const [formData, setFormData] = useState({
+      name: '',
+      surname: '',
+      email: '',
+      confirmpassword: '',
+      patronymic:'',
+      login:'',
+      password: ''
+    });
+    const [isFocused, setIsFocused] = useState({
+      name: false,
+      patronymic:false,
+      email:false,
+      confirmpassword:false,
+      login:false,
+      surname: false,
+      password: false,
+    })
+
+    const togglePasswordVisibility = () => {
+      setIsPasswordVisible(!isPasswordVisible);
+    };
+
+    const handleFormDataChange = (event) => {
+      const { name, value } = event.target;
+      setFormData((prevData) => ({
+          ...prevData,
+          [name]: value
+      }));
+  };
+
+    const isFormDataEmpty = (value) => {
+      return value?.trim() === '' 
+    }
+
+    const handleFocus = (field) => {
+      setIsFocused((prev) => ({
+        ...prev,
+        [field]: true,
+      }))
+    }
+
+    const handleBlur = (field) => {
+      setIsFocused((prev) => ({
+          ...prev,
+          [field]: false,
+      }))
+  }
+
+  return (
+    <div className={styles.signup__form}>
+        <div className={`${styles.signup__form__container} _container`}>
+                <div className={`${styles.signup__form__main}`}>
+                    <div className={`${styles.signup__form__block1}`}>
+                    <div className={styles.signup__form__input}>
+                    <label className={`${ !isFocused.name && isFormDataEmpty(formData.name) ? styles.signup__form__placeholder : styles.signup__form__placeholder__top}`}>Name</label>
+                    <InputLittleGlobal
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleFormDataChange}
+                        onFocus={() => handleFocus('name')}
+                        onBlur={() => handleBlur('name')}
+                    />
+                </div>
+                <div className={styles.signup__form__input}>
+                    <label className={`${ !isFocused.surname && isFormDataEmpty(formData.surname) ? styles.signup__form__placeholder : styles.signup__form__placeholder__top}`}>Surname</label>
+                    <InputLittleGlobal
+                        type="text"
+                        name="surname"
+                        value={formData.surname}
+                        onChange={handleFormDataChange}
+                        onFocus={() => handleFocus('surname')}
+                        onBlur={() => handleBlur('surname')}
+                    />
+                </div>
+                    </div>
+                    <div className={styles.signup__form__block2}>
+            <div className={styles.signup__form__input}>
+                <label className={`${ !isFocused.patronymic && isFormDataEmpty(formData.patronymic) ? styles.signup__form__placeholder : styles.signup__form__placeholder__top}`}>Patronymic</label>
+                <InputLittleGlobal
+                    type="text"
+                    name="patronymic"
+                    value={formData.patronymic}
+                    onChange={handleFormDataChange}
+                    onFocus={() => handleFocus('patronymic')}
+                    onBlur={() => handleBlur('patronymic')}
+                />
+            </div>
+            <div className={styles.signup__form__input}>
+                <label className={`${ !isFocused.login && isFormDataEmpty(formData.login) ? styles.signup__form__placeholder : styles.signup__form__placeholder__top}`}>Login</label>
+                <InputLittleGlobal
+                    type="text"
+                    name="login"
+                    value={formData.login}
+                    onChange={handleFormDataChange}
+                    onFocus={() => handleFocus('login')}
+                    onBlur={() => handleBlur('login')}
+                />
+            </div>
+            </div>
+                </div>
+                
+
+                <div className={styles.signup__form__input}>
+                <label className={`${ !isFocused.email && isFormDataEmpty(formData.email) ? styles.signup__form__placeholder : styles.signup__form__placeholder__top}`}>Email</label>
+                <Input
+                    type="text"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleFormDataChange}
+                    onFocus={() => handleFocus('email')}
+                    onBlur={() => handleBlur('email')}
+                />
+            </div>
+            <div className={styles.signup__form__input}>
+                <label className={`${ !isFocused.password && isFormDataEmpty(formData.password) ? styles.signup__form__placeholder : styles.signup__form__placeholder__top}`}>Password</label>
+                <Input 
+                    type={isPasswordVisible ? 'text' : 'password'}
+                    name="password"
+                    value={formData.password}
+                    onChange={handleFormDataChange}
+                    onFocus={() => { setIsClicked(true),handleFocus('password')}}
+                    onBlur={() => { setIsClicked(false), handleBlur('password')}}
+                />
+                <div className={styles.signup__form__icon__password}>
+                  <EyeIcon 
+                    isOpen={isPasswordVisible} 
+                    toggleEye={togglePasswordVisibility} 
+                    isClicked={isClicked}
+                  />
+                </div>
+            </div>
+            <div className={styles.signup__form__input}>
+                <label className={`${ !isFocused.confirmpassword && isFormDataEmpty(formData.confirmpassword) ? styles.signup__form__placeholder : styles.signup__form__placeholder__top}`}>Confirm password</label>
+                <Input
+                    type="text"
+                    name="confirmpassword"
+                    value={formData.confirmpassword}
+                    onChange={handleFormDataChange}
+                    onFocus={() => handleFocus('confirmpassword')}
+                    onBlur={() => handleBlur('confirmpassword')}
+                />
+            </div>
+            </div>
+        </div>
+  )
+}
+
+export default SignupForm

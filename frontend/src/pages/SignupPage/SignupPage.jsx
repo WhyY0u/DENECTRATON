@@ -5,13 +5,16 @@ import logo_background from '../../../public/images/Login/Background/logo_backgr
 import Header from '../../components/HeaderGlobal/Header'
 import SignupButtonGlobal from '../../components/SignupButtonGlobal/SignupButtonGlobal'
 import UnsignedinGlobal from '../../components/UnsignedinGlobal/UnsignedinGlobal'
+import SignupForm from '../../components/SignupForm/SignupForm'
 function SignupPage() {
   return (
-    <div>
-      <Background className={styles.login__background} src={logo_background} />
+    <div className={styles.signup__page}>
+      <Background className={styles.login__background} src={logo_background}>
       <Header />
+      <SignupForm/>
       <SignupButtonGlobal title={'Sign Up'}/>
-      <UnsignedinGlobal title={'Already have an account?'} subtitle={'Sign in to Dissmilate and find job,projects and talents in one place.'} btntitle={'Sign Up'}/>
+      <UnsignedinGlobal title={'Already have an account?'} subtitle={'Sign in to Dissmilate and find job,projects and talents in one place.'} btntitle={'Sign In'}/>
+      </Background>
     </div>
   )
 }

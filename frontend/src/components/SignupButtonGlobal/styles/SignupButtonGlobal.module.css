@@ -7,6 +7,7 @@
     text-align: center;
     display: block;
     margin: 0 auto;
+	margin-top: 20px; /* К примеру, добавляем отступ сверху */
 
     border-radius: 9px;
     box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.54);
