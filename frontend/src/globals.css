@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 /*Обнуление*/
 *{
 	padding: 0;
@@ -37,3 +37,15 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	font-family: Inter;
+}
+
+._container{
+	max-width: 350px;
+	padding: 0 15px;
+	margin: 0 auto;
+}

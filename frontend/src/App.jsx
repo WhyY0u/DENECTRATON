@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-
+import SignupPage from "./pages/SignupPage/SignupPage";
+import './globals.css'
 
 function App() {
 
@@ -7,10 +8,7 @@ function App() {
     <div className="wrapper">
       <Routes>
         <Route path="/login" index/>
-        <Route path="/signup" />
-
-
-
+        <Route path="/signup" element={<SignupPage/>}/>
       </Routes>
     </div>
   )
