@@ -1,19 +1,19 @@
 import React from 'react'
-import styles from './styles/Unsignedin.module.css'
-function Unsignedin() {
+import styles from './styles/UnsignedinGlobal.module.css'
+function UnsignedinGlobal({title,subtitle,btntitle,className}) {
   return (
     <div className={styles.unsignedin}>
         <div className={styles.unsignedin__title}>
-        Already have an account?
+            {title}
         </div>
         <div className={styles.unsignedin__subtitle}>
-        Sign in to Dissmilate and find job,projects and talents in one place.
+        {subtitle}
         </div>
         <button className={styles.unsignedin__btn}>
-        Sign In
+            {btntitle}
         </button>
     </div>
   )
 }
 
-export default Unsignedin
+export default UnsignedinGlobal
