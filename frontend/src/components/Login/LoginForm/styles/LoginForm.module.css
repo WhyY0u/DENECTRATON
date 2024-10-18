@@ -1,0 +1,46 @@
+
+
+
+
+.login__form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.login__form__placeholder {
+    position: absolute;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.42);
+    left: 15px;
+    top: 17px;
+    z-index: -1;
+    transition: all 0.2s ease;
+}
+
+.login__form__placeholder__top {
+    position: absolute;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.42);
+    left: 15px;
+    top: -17px;
+    z-index: -1;
+    transition: all 0.2s ease;
+}
+
+.login__form__input {
+    position: relative;
+}
+
+.login__form__icon__password {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    cursor: pointer;
+}
+
+
