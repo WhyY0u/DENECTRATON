@@ -17,3 +17,20 @@
         opacity: 1;
     }
 }
+
+.blur{
+    backdrop-filter: blur(14px);
+
+    width: 100vw;
+    animation: fadeIn 0.7s ease forwards;
+    height: 100vh;
+}
+
+@keyframes fadeIn {
+    0% {
+      background-color: rgba(0, 0, 0, 0.1); /* Исходное светлое значение */
+    }
+    100% {
+      background-color: rgba(0, 0, 0, 0.56); /* Целевое затемнённое значение */
+    }
+  }
