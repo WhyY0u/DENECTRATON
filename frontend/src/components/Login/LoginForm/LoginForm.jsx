@@ -50,7 +50,7 @@ function LoginForm() {
   return (
     <div className={styles.login__form}>
         <div className={`${styles.login__form__container} _container`}>
-            <div className={styles.login__form__input}>
+            <div className={`${styles.login__form__input} ${styles.input__login}`}>
                 <label className={`${ !isFocused.login && isFormDataEmpty(formData.login) ? styles.login__form__placeholder : styles.login__form__placeholder__top}`}>Login</label>
                 <Input 
                     type="text"
@@ -61,7 +61,7 @@ function LoginForm() {
                     onBlur={() => handleBlur('login')}
                 />
             </div>
-            <div className={styles.login__form__input}>
+            <div className={`${styles.login__form__input} ${styles.input_password}`}>
                 <label className={`${ !isFocused.password && isFormDataEmpty(formData.password) ? styles.login__form__placeholder : styles.login__form__placeholder__top}`}>Password</label>
                 <Input 
                     type={isPasswordVisible ? 'text' : 'password'}
@@ -81,14 +81,16 @@ function LoginForm() {
             </div>
             
             <SignupButtonGlobal 
-              className={!isFormDataEmpty(formData?.login) && !isFormDataEmpty(formData?.password) 
+              className={`${!isFormDataEmpty(formData?.login) && !isFormDataEmpty(formData?.password) 
               ? styles.login__form__button
-              : ''
-              } 
+              : ''} 
+              ${styles.login__form__button__animation}`} 
               title={'Sign In'}
             />
 
             <UnsignedinGlobal
+              className={styles.login__form__unsigned}
+              to={'/signup'}
               title={'First time here?'}
               subtitle={'Sign up to Dissmilate and find job, projects and talents in one place.'}
               btntitle={'Sign Up'}

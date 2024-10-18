@@ -1,18 +1,30 @@
 import React from 'react'
 import styles from './styles/UnsignedinGlobal.module.css'
-function UnsignedinGlobal({title,subtitle,btntitle,className}) {
+import { Link } from 'react-router-dom'
+function UnsignedinGlobal(props) {
+
+  const {
+    title,
+    subtitle,
+    btntitle,
+    to,
+    className,
+  } = props
+
   return (
-    <div className={styles.unsignedin}>
-        <div className={styles.unsignedin__title}>
-            {title}
-        </div>
-        <div className={styles.unsignedin__subtitle}>
-        {subtitle}
-        </div>
-        <button className={styles.unsignedin__btn}>
-            {btntitle}
-        </button>
-    </div>
+      <div className={`${styles.unsignedin} ${className}`}>
+          <div className={styles.unsignedin__title}>
+              {title}
+          </div>
+          <div className={styles.unsignedin__subtitle}>
+          {subtitle}
+          </div>
+          <Link to={to}>
+            <button className={styles.unsignedin__btn}>
+                {btntitle}
+            </button>
+          </Link>
+      </div>
   )
 }
 
