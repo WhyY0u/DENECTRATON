@@ -109,8 +109,6 @@ function SignupForm() {
             </div>
             </div>
                 </div>
-                
-
                 <div className={styles.signup__form__input}>
                 <label className={`${ !isFocused.email && isFormDataEmpty(formData.email) ? styles.signup__form__placeholder : styles.signup__form__placeholder__top}`}>Email</label>
                 <Input

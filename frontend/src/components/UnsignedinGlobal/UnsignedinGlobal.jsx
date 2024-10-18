@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './styles/UnsignedinGlobal.module.css'
 function UnsignedinGlobal({title,subtitle,btntitle,className}) {
   return (
-    <div className={styles.unsignedin}>
+    <div className={`${styles.unsignedin} ${className}`}>
         <div className={styles.unsignedin__title}>
             {title}
         </div>

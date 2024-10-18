@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './styles/SignupButtonGlobal.module.css'
-function SignupButtonGlobal({title,className}) {
+function SignupButtonGlobal({title,className,onClick}) {
   return (
-    <button className={`${styles.signupbutton} ${className}`}>
+    <button onClick={onClick} className={`${styles.signupbutton} ${className}`}>
     {title}
   </button>
   )
