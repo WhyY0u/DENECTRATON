@@ -21,8 +21,7 @@ function SignupPage() {
           ) : (
             <>
               <Header />
-              <SignupForm />
-              <SignupButtonGlobal onClick={handleOpen} title={'Sign Up'} />
+              <SignupForm handleOpen={handleOpen} />
               <UnsignedinGlobal
                 className={styles.signup__page__unsigned}
                 to={'/login'}

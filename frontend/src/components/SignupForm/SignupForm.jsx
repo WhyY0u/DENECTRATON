@@ -5,7 +5,7 @@ import EyeIcon from '../EyeIcon/EyeIcon';
 import InputLittleGlobal from '../InputLittleGlobal/InputLittleGlobal';
 import SignupButtonGlobal from '../SignupButtonGlobal/SignupButtonGlobal';
 
-function SignupForm() {
+function SignupForm({handleOpen}) {
     const [isPasswordVisible, setIsPasswordVisible] = useState(false)
     const [isPasswordConfVisible, setIsPasswordConfVisible] = useState(false)
     const [isPasswordClicked, setIsPasswordClicked] = useState(false)
@@ -168,6 +168,10 @@ function SignupForm() {
 
                 <SignupButtonGlobal 
                   title={'Sign Up'}
+                  onClick={!isFormDataEmpty(formData?.login) && !isFormDataEmpty(formData?.password) 
+                    && !isFormDataEmpty(formData?.name ) && !isFormDataEmpty(formData?.surname)
+                    && !isFormDataEmpty(formData?.patronymic)  && !isFormDataEmpty(formData?.email) 
+                    && !isFormDataEmpty(formData?.confirmpassword) ? () => handleOpen() : null}
                   className={`${!isFormDataEmpty(formData?.login) && !isFormDataEmpty(formData?.password) 
                     && !isFormDataEmpty(formData?.name ) && !isFormDataEmpty(formData?.surname)
                     && !isFormDataEmpty(formData?.patronymic)  && !isFormDataEmpty(formData?.email) 

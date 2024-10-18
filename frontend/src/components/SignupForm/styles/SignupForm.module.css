@@ -7,7 +7,6 @@
 .signup__form__input{
     margin-top: 34px;
 }
-<<<<<<< HEAD
 
 .signup__name {
     position: relative;
@@ -52,22 +51,17 @@
     animation: leftSlideIn 1s forwards;
 }
 
-=======
->>>>>>> origin/godOfFrontend
+
 .signup__form__main{
     display: flex;
     justify-content: space-between;
 }
 .signup__form__block1{
-<<<<<<< HEAD
     max-width: 145px;
 }
 
 .signup__form__block2{
     max-width: 145px;
-=======
-    width: 100%;
->>>>>>> origin/godOfFrontend
 }
 .signup__littlebody{
     display: flex;
@@ -108,7 +102,6 @@
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 .signup__form__button__active {
     margin-top: 30px;
     background-color: rgb(16, 68, 230);
@@ -183,6 +176,3 @@
         max-width: 115px;
     }
 }
-=======
-
->>>>>>> origin/godOfFrontend
