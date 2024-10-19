@@ -5,6 +5,7 @@ import AboutCompany from '../../components/ProfilePageCompanyComponents/AboutCom
 import logo_background from '../../../public/images/Background/logo_background.png'
 import NewsForCompany from '../../components/ProfilePageCompanyComponents/NewsForCompany/NewsForCompany'
 import ReviewsCompany from '../../components/ProfilePageCompanyComponents/ReviewsCompany/ReviewsCompany'
+import Navigation from '../../components/Navigation/Navigation'
 
 function ProfilePageCompany() {
   return (
@@ -14,6 +15,9 @@ function ProfilePageCompany() {
             <NewsForCompany />
             <ReviewsCompany />
         </Background>
+        <div className={`${styles.profile__page__navigation__container} _container`}>
+                <Navigation />
+        </div>
     </div>
   )
 }

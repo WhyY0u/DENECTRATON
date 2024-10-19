@@ -4,6 +4,8 @@ import './globals.css'
 import LoginPage from "./pages/LoginPage/LoginPage";
 import Choice from "./components/Choice/Choice";
 import ProfilePageCompany from "./pages/ProfilePageCompany/ProfilePageCompany";
+import Email from "./components/Email/Email";
+import UserProfilePage from "./pages/UserProfilePage/UserProfilePage";
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         <Route path="/login" element={<LoginPage />}/>
         <Route path="/signup" element={<SignupPage/>}/>
         <Route path="/profile-page-company" element={<ProfilePageCompany />}/>
+        <Route path="/userprofile" element={<UserProfilePage/>}/>
+
       </Routes>
     </div>
   )

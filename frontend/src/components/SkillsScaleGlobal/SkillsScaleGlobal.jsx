@@ -2,7 +2,6 @@ import styles from './styles/SkillsScaleGlobal.module.css';
 export const SkillScale = ({ skill, level }) => {
     const maxLevel = 5;
     const scalePercentage = (level / maxLevel) * 100; 
-
    const getColorByLevel = (level) => {
     switch (level) {
       case 1:
@@ -21,11 +20,11 @@ export const SkillScale = ({ skill, level }) => {
   };
 
     return (
-      <div className={styles.setofskillsblock}>
-        <div className={styles.setofskillstitle}>{skill}</div>
-        <div className={styles.setofskillsscale}>
+      <div className={styles.setofskills__block}>
+        <div className={styles.setofskills__title}>{skill}</div>
+        <div className={styles.setofskills__scale}>
         <div
-          className={styles.setofskillsfilled}
+          className={styles.setofskills__filled}
           style={{
             width: `${scalePercentage}%`,
             backgroundColor: getColorByLevel(level), 

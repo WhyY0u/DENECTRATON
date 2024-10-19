@@ -7,7 +7,7 @@ import SignupButtonGlobal from '../../components/SignupButtonGlobal/SignupButton
 import UnsignedinGlobal from '../../components/UnsignedinGlobal/UnsignedinGlobal'
 import SignupForm from '../../components/SignupForm/SignupForm'
 import { useState } from 'react'
-import Choice from '../../components/Choice/Choice'
+import Email from '../../components/Email/Email'
 function SignupPage() {
   const [open,setOpen] = useState(false)
   const handleOpen = () => {
@@ -17,7 +17,7 @@ function SignupPage() {
     <div className={styles.signup__page}>
       <Background className={open ? styles.blur : ''} src={logo_background}>
       {open ? (
-        <Choice />
+        <Email title={'Код отправлен'} subtitle={'на почту aimsi13579@gmail.com'} btntitle={'Confirm'} />
           ) : (
             <>
               <Header />
