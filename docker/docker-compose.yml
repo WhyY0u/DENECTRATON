@@ -1,0 +1,15 @@
+services:
+  mysql:
+    build:
+      context: .
+      dockerfile: DataBase/MySql/MySql.dockerfile
+    ports:
+      - "3306:3306"
+
+  redis:
+    build:
+      context: .
+      dockerfile: DataBase/Redis/Redis.dockerfile
+    ports:
+      - "6379:6379"
+
