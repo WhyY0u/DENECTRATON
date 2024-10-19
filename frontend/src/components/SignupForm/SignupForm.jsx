@@ -121,7 +121,7 @@ function SignupForm({handleOpen}) {
                 <div className={`${styles.signup__form__input} ${styles.signup__email}`}>
                   <label className={`${ !isFocused.email && isFormDataEmpty(formData.email) ? styles.signup__form__placeholder : styles.signup__form__placeholder__top}`}>Email</label>
                   <Input
-                      type="text"
+                      type="email"
                       name="email"
                       value={formData.email}
                       onChange={handleFormDataChange}
