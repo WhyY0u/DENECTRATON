@@ -12,7 +12,8 @@
 
 }
 .choice{
-    margin-top: 60px;
+    position: relative;
+    bottom: 60px;
 }
 
 .slideLeft{
