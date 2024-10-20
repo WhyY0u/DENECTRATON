@@ -1,0 +1,113 @@
+
+
+.login__form {
+    margin-top: 30px;
+}
+
+.login__form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.login__form__placeholder {
+    position: absolute;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.42);
+    left: 15px;
+    top: 17px;
+    z-index: -1;
+    transition: all 0.2s ease;
+}
+
+.login__form__placeholder__top {
+    position: absolute;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.42);
+    left: 15px;
+    top: -17px;
+    z-index: -1;
+    transition: all 0.2s ease;
+}
+
+.login__form__input {
+    position: relative;
+}
+
+.login__form__icon__password {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    cursor: pointer;
+}
+
+
+.login__form__button {
+    background-color: rgb(16, 68, 230);
+    box-shadow: 0px 0px 18px 0px rgba(16, 68, 230, 0.69);
+    transition: background 0.2s ease-in;
+}
+
+.login__form__button__animation {
+    position: relative;
+    animation: downSlideIn 1s forwards; 
+    transform: translateY(100%); 
+}
+
+
+
+.input__login {
+    position: relative;
+    animation: leftSlideIn 1s forwards; /* Запускаем анимацию */
+    transform: translateX(-100%); /* Начальное положение - слева */
+}
+
+.input_password {
+    position: relative;
+    animation: rightSlideIn 1s forwards; /* Запускаем анимацию */
+    transform: translateX(100%); /* Начальное положение - слева */
+}
+
+
+.login__form__unsigned {
+    position: relative;
+    animation: downSlideIn 1s forwards;
+    transform: translateY(100%);
+}
+
+@keyframes leftSlideIn {
+    0% {
+        transform: translateX(-100%); /* Начинаем слева */
+        opacity: 0; /* Начальная непрозрачность */
+    }
+    100% {
+        transform: translateX(0); /* Конечное положение - в центре */
+        opacity: 1; /* Конечная непрозрачность */
+    }
+}
+
+@keyframes rightSlideIn {
+    0% {
+        transform: translateX(100%); /* Начинаем слева */
+        opacity: 0; /* Начальная непрозрачность */
+    }
+    100% {
+        transform: translateX(0); /* Конечное положение - в центре */
+        opacity: 1; /* Конечная непрозрачность */
+    }
+}
+
+@keyframes downSlideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}

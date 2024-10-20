@@ -1,0 +1,58 @@
+.marginTop{
+    margin-top: 52px;
+}
+.title{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    color: rgba(255, 255, 255, 0.72);
+    animation: slideDown 0.7s ease-in-out forwards; /* Анимация длится 1 секунду */
+
+}
+.choice{
+    position: relative;
+    bottom: 60px;
+}
+
+.slideLeft{
+    animation: slideInLeft 0.7s forwards; /* Анимация длится 1 секунду */
+}
+.slideRight{
+    animation: slideInRight 0.7s  forwards; /* Анимация длится 1 секунду */
+}
+
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%); /* Текст начинается за левой границей экрана */
+    opacity: 0; /* Прозрачный */
+  }
+  100% {
+    transform: translateX(0); /* Текст в исходном положении */
+    opacity: 1; /* Полностью видимый */
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%); /* Текст начинается за правой границей экрана */
+    opacity: 0; /* Прозрачный */
+  }
+  100% {
+    transform: translateX(0); /* Текст в исходном положении */
+    opacity: 1; /* Полностью видимый */
+  }
+}
+
+@keyframes slideDown {
+    0% {
+      transform: translateY(-100%); /* Текст начинается за верхней границей экрана */
+      opacity: 0; /* Прозрачный */
+    }
+    100% {
+      transform: translateY(0); /* Текст в исходном положении */
+      opacity: 1; /* Полностью видимый */
+    }
+  }

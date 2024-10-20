@@ -1,0 +1,232 @@
+
+
+.news__for__company__title {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+    transform: translateX(100%);
+    animation: rightSlideIn 1s forwards;
+}
+
+.news__for__company__title p {
+    background: rgba(0, 0, 0, 0.28);
+    color: rgba(240, 240, 240, 0.49);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 200;
+    border-radius: 8px;
+    padding: 5px 7px;
+}
+
+.news__for__company__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list__item__vacancy {
+    background-color: rgba(0, 0, 0, 0.28);
+    border-radius: 8px;
+    padding: 10px;
+    transform: translateX(-100%);
+    animation: leftSlideIn 1s forwards;
+}
+
+.list__item__vacancy__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title__block {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+.header__title__block__title {
+    color: rgb(240, 240, 240);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header__description {
+    color: rgba(240, 240, 240, 0.6);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+.header__pin__block {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header__pin__block__img {
+    opacity: 0.1
+}
+
+.header__pin__block__text {
+    color: rgba(240, 240, 240, 0.33);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 200;
+    margin-bottom: 3px;
+}
+
+.header__pin__type__blue {
+    color: rgba(0, 88, 255, 0.6);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.header__pin__type__purple {
+    color: rgba(167, 0, 255, 0.6);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.list__item__vacancy__desc {
+    margin-top: 5px;
+    color: rgba(240, 240, 240, 0.53);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 12px;
+
+}
+
+.list__item__vacancy__skills {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+}
+
+.skills__item__title {
+    margin-bottom: 5px;
+    color: rgba(240, 240, 240, 0.81);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.list__item__vacancy__reply {
+    margin-top: 10px;
+}
+
+.reply__btn {
+    color: rgb(240, 240, 240);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 5px 20px;
+    background: rgba(16, 68, 230, 0.64);
+    border-radius: 4px;
+    box-shadow: 0px 0px 18px 0px rgba(16, 68, 230, 0.75);
+}
+
+.list__item__event {
+    background-color: rgba(0, 0, 0, 0.28);
+    border-radius: 8px;
+    padding: 10px;
+    transform: translateX(100%);
+    animation: rightSlideIn 1s forwards;
+}
+
+.buttons__info__block {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info__block {
+    display: flex;
+    gap: 15px;
+}
+
+
+.info__block__place__block {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.28);
+    padding: 7px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 8px;
+}
+
+.place__block__title {
+    color: rgba(240, 240, 240, 0.62);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: px;
+}
+
+.place__block__place {
+    color: rgba(240, 240, 240, 0.33);
+    font-family: Inter;
+    font-size: 9px;
+    font-weight: 200;
+}
+
+
+@media(max-width: 330px) {
+    .info__block {
+        display: flex;
+        gap: 10px;
+    }    
+}
+
+
+@keyframes topSlideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes leftSlideIn {
+    0% {
+        transform: translateX(-100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
+@keyframes rightSlideIn {
+    0% {
+        transform: translateX(100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes downSlideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}

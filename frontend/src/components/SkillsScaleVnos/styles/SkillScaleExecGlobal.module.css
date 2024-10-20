@@ -1,0 +1,28 @@
+.setofskills__block {
+    margin-bottom: 10px;
+  }
+  
+  .setofskills__title {
+    color: rgba(240, 240, 240, 0.81);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    margin-bottom: 2px;
+  }
+  
+  .setofskills__scale {
+    background: rgba(0, 0, 0, 0.25);
+    height: 7px;
+    width: 62px;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .setofskills__filled {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+  }
+  

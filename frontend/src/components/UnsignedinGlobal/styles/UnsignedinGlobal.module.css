@@ -1,0 +1,39 @@
+.unsignedin{
+    padding: 19px 14px 37px 14px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.28);
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+.unsignedin__title{
+    color: rgba(255, 255, 255, 0.72);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.unsignedin__subtitle{
+    padding-top: 10px;
+    padding-bottom: 48px;
+    color: rgba(255, 255, 255, 0.39);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 auto;
+    max-width: 235px;
+    line-height: 15px;
+}
+.unsignedin__btn{
+    border-radius: 8px;
+    box-shadow: 0px 0px 18px 0px rgba(16, 68, 230, 0.75);
+    background: rgba(16, 68, 230, 0.64);
+    padding: 11px 57px;
+
+    color: rgb(240, 240, 240);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+}

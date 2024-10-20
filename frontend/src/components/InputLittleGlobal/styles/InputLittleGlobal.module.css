@@ -1,0 +1,32 @@
+.inputlittleglobal {
+    font-family: Inter;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.28);
+    color: rgba(255, 255, 255, 0.67);
+    background: rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 10px;
+    margin-right: 12px;
+
+    max-width: 145px;
+}
+
+
+@media (max-width: 365px) {
+    .inputlittleglobal {
+      max-width: 135px;
+    }
+}
+
+@media (max-width: 345px) {
+  .inputlittleglobal {
+    max-width: 115px;
+  }
+}
+
+
+
+
+

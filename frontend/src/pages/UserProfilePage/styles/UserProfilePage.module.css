@@ -1,0 +1,461 @@
+.setofskills{
+    display: flex;
+}
+.setofskills__col{
+    margin-right: 17px;
+}
+.userprofile__image {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 4px;
+    display: flex;
+
+    transform: translateY(-100%);
+    animation: topSlideIn 1s forwards;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.19);
+    width: fit-content;
+    padding: 6px 8px;
+}
+
+.userprofile__block{
+    margin-top: 19px;
+    height: 166px;
+    display: flex;
+}
+.userprofile__block_first{
+    transform: translateX(-100%);
+    animation: leftSlideIn 1s forwards;
+}
+.userprofile__block_first img{
+    margin-right: 16px;
+    height: 170px;
+    max-width: 151px;
+}
+.userprofile__block_second{ 
+    transform: translateX(100%);
+    animation: rightSlideIn 1s forwards;
+}
+
+
+.userprofile__info{
+    padding: 8px 10px 6px 5px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.26);
+    max-width: 131px;
+}
+.userprofile__role{
+    color: rgba(203, 199, 199, 0.71);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 3px;
+
+}
+ .userprofile__name{
+    color: rgb(240, 240, 240);
+    line-height: 17px;
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+}
+.userprofile__skills{
+    margin-top: 8px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.26);
+    padding: 8px 5px 8px 5px;
+}
+.userprofile__desc{
+    margin-bottom: 6px;
+    color: rgba(203, 199, 199, 0.65);
+    font-family: Inter;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 11px;
+}
+.userprofile__skills_scale{
+    display: flex;
+}
+
+.userprofile__skills_scale span{
+    color: rgb(209, 209, 209);
+    margin-right: 3px;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+}
+.userprofile__skills_line{
+
+}
+.userprofile__buttons{
+    margin-top: 10px;
+    display: flex;
+}
+.userprofile__btn1{
+    border-radius: 5px;
+    padding: 6px 30px;
+    margin-right: 16px;
+    box-shadow: 0px 0px 18px 0px rgba(16, 68, 230, 0.75);
+    background: rgb(16, 68, 230);
+
+    color: rgba(203, 199, 199, 0.8);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+}
+.userprofile__btn2{
+    padding: 6px 24px;
+    border-radius: 5px;
+
+    box-shadow: 0px 0px 18px 0px rgba(32, 129, 12, 0.75);
+    background: rgba(32, 129, 12, 0.64);
+
+    color: rgb(203, 199, 199);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+@media (max-width:382px){
+    .userprofile__btn1{
+        padding: 6px 24px;
+        font-size: 10px;
+        margin-right: 10px;
+
+    }
+    .userprofile__btn2{
+        padding: 6px 20px;
+        font-size: 10px;
+    }
+}
+@media (max-width:362px){
+    .userprofile__btn1{
+        padding: 6px 18px;
+        font-size: 10px;
+        margin-right: 5px;
+
+    }
+    .userprofile__btn2{
+        padding: 6px 15px;
+        font-size: 10px;
+    }
+}
+@media (max-width:339px){
+    .userprofile__btn1{
+        padding: 6px 13px;
+        font-size: 10px;
+    }
+    .userprofile__btn2{
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+}
+.contactsblock{
+    padding: 15px 24px 15px 14px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    border-radius: 8px;
+    margin-top: 24px;
+    background: rgba(0, 0, 0, 0.28);
+    transform: translateX(-100%);
+    animation: leftSlideIn 1s forwards;
+}
+.contactsblock__row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+
+}
+.contactsblock__col{
+}
+.contactsblock__title{
+    color: rgb(209, 209, 209);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+}
+.contactsblock__subtitle{
+    margin-top: 1px;
+    color: rgba(255, 255, 255, 0.28);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+}
+@media (max-width:333px){
+    .contactsblock__title{
+        font-size: 9px;
+    }
+    .contactsblock__subtitle{
+        font-size: 9px;
+    }
+}
+.vnoscard{
+    position: relative;
+bottom: 20px;
+}
+.vnossocial{
+    position: relative;
+    bottom: 20px;
+}
+.contactsblock__icons img:not(:last-child){
+    margin-right: 6px;
+}
+.contactsblock__icons{
+    margin-top: 3px;
+}
+
+.perfomance{
+    margin-top: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.36);
+
+    transform: translateX(100%);
+    animation: rightSlideIn 1s forwards;
+
+    box-sizing: border-box;
+    border-radius: 8px;
+        padding: 12px 6px 14px 12px;
+    background: rgba(0, 0, 0, 0.28);
+}
+.perfomance__headerfirst{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.perfomance__textnos{
+    width: 5px;
+    background: rgba(196, 196, 196, 0.37);
+    border-radius: 50%;
+    display: inline-flex;
+    position: relative;
+    bottom: 3px;
+    margin-right: 4px;
+    height: 5px;
+}
+.perfomance__headertext{
+    color: rgb(240, 240, 240);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}   
+.perfomance__headertext2{
+    color: rgba(240, 240, 240, 0.35);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.perfomance__headersecond{
+    color: rgba(240, 240, 240, 0.33);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 12px;
+}
+.perfomance__desc{
+    color: rgba(240, 240, 240, 0.53);
+    font-family: Inter;
+    font-size: 10px;
+    margin-top: 5px;
+    font-weight: 200;
+    line-height: 12px;
+}
+
+
+.stack{
+    transform: translateX(-100%);
+    animation: leftSlideIn 1s forwards;
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 8px 8px 8px 8px;
+    margin-top: 9px;
+background: rgba(0, 0, 0, 0.40);
+}
+.stackMain{
+}
+.stackTable {
+    display: table; /* Используем display: table для таблицы */
+    border-collapse: collapse; /* Убираем двойные границы */
+    width: 100%; /* Занимает 100% ширичны */
+
+
+   
+}
+.stack__header{
+    padding: 10px 13px 10px 13px;
+    border-radius: 8px 8px 8px 8px;
+
+}
+.stackRow {
+    display: table-row; /* Каждая строка ведет себя как строка таблицы */
+    padding: 11px 0px;
+
+}
+.stackItem {
+    width: 25%; /* Установите ширину ячеек в 25% для равномерного распределения */
+    font-size: 11px;
+    color: rgb(240, 240, 240);
+    padding: 11px 0px;
+    font-family: Inter;
+    font-weight: 300;
+}
+.stackHeader, .stackItem {
+    display: table-cell; /* Каждая ячейка ведет себя как ячейка таблицы */
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    padding: 11px 0px;
+
+    color: rgb(240, 240, 240);
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.stackHeader {
+    color: rgb(240, 240, 240);
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 300;
+    padding: 11px 0px;
+
+    text-align: center;
+    width: 25%; /* Установите ширину ячеек в 25% для равномерного распределения */
+}
+
+.stackItem {
+      width: 25%; /* Установите ширину ячеек в 25% для равномерного распределения */
+      font-size: 10px;
+      color: rgb(240, 240, 240);
+      font-family: Inter;
+      font-weight: 300;
+      line-height: 13px;
+}
+
+.stackHeader:nth-child(1), .stackItem:nth-child(1) {
+    flex: 2; /* Для первой колонки больше места */
+}
+.stack__header_first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stack__header_title{
+    color: rgb(240, 240, 240);
+    align-items: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    margin-bottom: 4px;
+}
+.stack__header_title img{
+    position: relative;
+    bottom: 3px;
+}
+.stack__headersecond2{
+    color: rgba(240, 240, 240, 0.33);
+    font-family: Inter;
+    font-size: 10px;
+    margin-bottom: 2px;
+    font-weight: 200;
+    line-height: 12px;
+}
+.stack__header_subtitle{
+    color: rgba(240, 240, 240, 0.6);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    margin-bottom: 5px;
+
+}
+.stack__headersecond{
+    color: rgba(0, 88, 255, 0.6);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+}
+.stack__header_second{
+    display: flex;
+    justify-content: space-between;
+}
+.stack__header_desc{
+    color: rgba(240, 240, 240, 0.53);
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 12px;
+}
+/* Убираем двойные бордеры между строками */
+.stackRow:last-child .stackHeader,
+.stackRow:last-child .stackItem {
+    border-bottom: none; /* Убираем нижний бордер для последней строки */
+}
+
+.stackRow:last-child .stackItem:last-child {
+    border-right: none;
+}
+.stackRow:last-child .stackItem:first-child {
+    border-left: none;
+}
+
+
+.profile__page__navigation__container {
+    position: relative;
+    bottom: 10px;
+}
+
+
+@keyframes topSlideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes leftSlideIn {
+    0% {
+        transform: translateX(-100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
+@keyframes rightSlideIn {
+    0% {
+        transform: translateX(100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes downSlideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
